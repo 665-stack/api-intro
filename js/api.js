@@ -7,7 +7,7 @@ function loadData() {
 function loadUsers() {
     fetch('https://jsonplaceholder.typicode.com/users')
         .then(res => res.json())
-        .then(data => console.log(data))
+        .then(data => displayUsers(data))
 }
 // one more example
 function loadPosts() {
@@ -15,3 +15,8 @@ function loadPosts() {
         .then(res => res.json())
         .then(data => console.log(data))
 }
+// load hoya data er uses
+function displayUsers(data) {
+    console.log(data)
+}
+
