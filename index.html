@@ -8,18 +8,35 @@
     <title>API </title>
 </head>
 <style>
-    button {
+    .btn1 {
         background-color: brown;
         color: white;
         padding: 7px 15px 7px 15px;
         border-radius: 5px;
+    }
 
+    .btn2 {
+        background-color: rgb(24, 24, 170);
+        color: white;
+        padding: 7px 15px 7px 15px;
+        border-radius: 5px;
+    }
+
+    .btn3 {
+        background-color: rgb(36, 117, 36);
+        color: white;
+        padding: 7px 15px 7px 15px;
+        border-radius: 5px;
     }
 </style>
 
 <body>
     <h2>Hellow API</h2>
-    <button onclick="loadData()">Load Data</button>
+    <button onclick="loadData()" class="btn1">Load Data</button>
+    <br><br>
+    <button onclick="loadUsers()" class="btn2">Load Users</button>
+    <br><br>
+    <button onclick="loadPosts()" class="btn3">Load Posts</button>
     <!--<script src="js/json.js"></script>-->
     <script src="js/api.js"></script>
 </body>
